@@ -1,2 +1,10 @@
   
-<app-ball></app-ball>
+<div (window:scroll)="onScroll()" class="scroll-smooth bg-cyan-500 snap-y snap-mandatory">
+    <app-home1 class="snap-center snap-always" ></app-home1>
+    <app-home2 class="snap-start snap-always"></app-home2>
+    <app-home3 class="snap-start snap-always"></app-home3>
+    <app-home4 class="snap-start snap-always" #myElem></app-home4>
+    <p ></p>
+
+</div>
+

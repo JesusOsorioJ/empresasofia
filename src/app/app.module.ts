@@ -12,6 +12,7 @@ import { Home3Component } from './pages/home3/home3.component';
 import { Home4Component } from './pages/home4/home4.component';
 import { AnimationBookComponent } from './components/animation-book/animation-book.component';
 import { BallComponent } from './components/ball/ball.component';
+import { DiagonalComponent } from './components/diagonal/diagonal.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { BallComponent } from './components/ball/ball.component';
     Home4Component,
     AnimationBookComponent,
     BallComponent,
+    DiagonalComponent,
     
   ],
   imports: [
