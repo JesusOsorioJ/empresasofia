@@ -1,64 +1,58 @@
+<div id="home2" class=" bg-white h-[100vh] bg-cover overflow:hidden bg-contain bg-center bg-no-repeat" style="background-image:linear-gradient(0deg, rgba(255,255,255,0) 23%, rgba(0,3,38,1) 93%)
+    ,url(../../../assets/fondo/fondo2.jpg)">
+  <div class="pt-6">
+    <app-header></app-header>
+    <!-- Titulo sobre nosotros -->
+    <div
+      class="mx-auto max-w-2xl px-4 pt-10  sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8  ">
+      <div class="lg:col-span-1 ">
+      </div>
 
+      <!-- Sobre nosotros text  -->
+      <div class="ml-36 lg:row-span-3 lg:col-span-2   ">
 
-    <div id="home2" (window:scroll)="onScroll()" class=" bg-white h-[100vh] bg-cover overflow:hidden bg-contain bg-center bg-no-repeat" style="background-image:linear-gradient(0deg, rgba(255,255,255,0) 23%, rgba(0,3,38,1) 93%)
-    ,url(../../../assets/fondo/fondo2.jpg)" #home2>
-        <div class="pt-6">
-          <app-header></app-header>
-          <!-- Titulo sobre nosotros -->
-          <div class="mx-auto max-w-2xl px-4 pt-10  sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8  ">
-            <div class="lg:col-span-1 ">
-             </div>
+        <!-- sobre nosotros-->
+        <div>
+          <div class="lg:pr-8 mb-4">
+            <h1 id="home2title" class="text-2xl  font-bold tracking-tight text-gray-200 sm:text-3xl">Sobre nosotros</h1>
+          </div>
+          <div class="space-y-6">
+            <p id="home2text" class="text-base text-[transparent]">
+              Somos una Empresa privada consultora de Archivos, bibliotecas y centro de documentación, orientada
+              a brindar capacitaciones y asesorías especializadas relacionada con los procesos documentales y
+              suministros de insumos; buscando, entre otros, gestionar y digitalizar la documentación para tener
+              la información al alcance en cualquier momento.
+            </p>
+          </div>
 
-            <!-- Sobre nosotros text  -->
-            <div  class="ml-36 lg:row-span-3 lg:col-span-2   ">
-              <!-- sobre nosotros-->
-              
-              <div>
-                <div class="lg:pr-8 mb-4">
-                  <h1 id="home2title" class="text-2xl  font-bold tracking-tight text-gray-200 sm:text-3xl">Sobre nosotros</h1>
-                </div>
-                <div class="space-y-6">
-                  <p id="home2text" class="text-base text-gray-300">
-                    Somos una Empresa privada consultora de Archivos, bibliotecas y centro de documentación, orientada
-                     a brindar capacitaciones y asesorías especializadas relacionada con los procesos documentales y 
-                     suministros de insumos; buscando, entre otros, gestionar y digitalizar la documentación para tener 
-                     la información al alcance en cualquier momento. 
-    
-                </p>
-              </div>
-
-              </div>
-              
-        
-              <div class="mt-6">
-                <h3 id="home2title" class="text-sm font-medium text-gray-300">SERVICIOS</h3>
-        
-                <div class="mt-4">
-                  <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
-                    <li  class="text-gray-400"><span id="home2item" class="text-gray-200">Gestión documental, asesorías e interventorías</span></li>
-        
-                    <li  class="text-gray-400"><span id="home2item" class="text-gray-200">Inventarios documentales</span></li>
-        
-                    <li  class="text-gray-400"><span id="home2item" class="text-gray-200">Instrumentos Archivísticos, 
-                    (CCD, TRD, TVD, PINAR, PGD, SIC)
-                    </span></li>
-        
-                    <li  class="text-gray-400"><span id="home2item" class="text-gray-200">Organización de archivos</span></li>
-                    <li  class="text-gray-400"><span id="home2item" class="text-gray-200">Digitalización de documentos. </span></li>
-                    <li  class="text-gray-400"><span id="home2item" class="text-gray-200">Insumos de Cajas, carpetas, ganchos</span></li>
-                    </ul>
-                </div>
-              </div>
-        
-            </div>
-        
-            <!-- Imagen  -->
-            <div class="mt-4 lg:col-span-1 lg:col-start-1 lg:mt-0"> 
-            <app-diagonal width="20vh" heigth="20vh"></app-diagonal>
-               
-          </div>  
-            
+        </div>
+        <div class="mt-6">
+          <h3 id="home2title" class="text-sm font-medium text-gray-300">SERVICIOS</h3>
+          <div class="mt-4">
+            <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
+              <li class="text-gray-400"><span id="home2item" class="text-[transparent]">Gestión documental, asesorías e
+                  interventorías</span></li>
+              <li class="text-gray-400"><span id="home2item" class="text-[transparent]">Inventarios documentales</span></li>
+              <li class="text-gray-400"><span id="home2item" class="text-[transparent]">Instrumentos Archivísticos,
+                  (CCD, TRD, TVD, PINAR, PGD, SIC)
+                </span></li>
+              <li class="text-gray-400"><span id="home2item" class="text-[transparent]">Organización de archivos</span></li>
+              <li class="text-gray-400"><span id="home2item" class="text-[transparent]">Digitalización de documentos. </span>
+              </li>
+              <li class="text-gray-400"><span id="home2item" class="text-[transparent]">Insumos de Cajas, carpetas,
+                  ganchos</span></li>
+            </ul>
           </div>
         </div>
+
+      </div>
+
+      <!-- Imagen  -->
+      <div class="mt-4 lg:col-span-1 lg:col-start-1 lg:mt-0">
+        <app-diagonal width="20vh" heigth="20vh"></app-diagonal>
+
+      </div>
+
     </div>
-    
+  </div>
+</div>

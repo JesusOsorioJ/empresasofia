@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import {gsap} from 'gsap'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 @Component({
   selector: 'app-home3',
@@ -7,31 +9,34 @@ import {gsap} from 'gsap'
 })
 export class Home3Component {
 
-  // hola= ["compromiso", "integridad", "calidad"]
+  ngOnInit() {
+    gsap.registerPlugin(ScrollTrigger);
 
-  ngOnInit(){
+    // open header home3
+    gsap.to(["#home3 #textheader", "#home3  #ArchieBoxheader"], {
+      y: "-2vh", duration: 1.3, color: "#a8b2d1",
+      scrollTrigger: {
+        trigger: "#home3 #textheader", start: "center 15%", end: "center 11%",
+        toggleActions: "play reverse play reverse",
+      }, 
+    });
 
-    // gsap.to("#parrafohome3",0,{ y:"10vh", display:"none"})
-    // setInterval(this.ass
-    //   , 1000);
-      
-    }
-
-    public onshow (){
-      // console.log(window.pageYOffset)
-    }
-
-    public onScroll(){
-    let ph = window.pageYOffset/window.innerHeight
-
+    // open parrafo home3
+    gsap.to("#parrafohome3", {
+      color: "#e5e7eb", x: "2vh", duration: 2, stagger: 0.3,
+      scrollTrigger: {
+        trigger: "#parrafohome3", start: "center 80%", end: "center 0%",
+        toggleActions: "play reverse play reverse",
+      },
+    });
     
 
-    
-    if( ph>2){gsap.to("#parrafohome3",0,{display:"block", delay:1})
-    gsap.to("#parrafohome3",2,{y:"0vh", delay:1})
-    gsap.to("#home3  #ArchieBoxheader,#home3 #textheader",0,
-  { display:"flex"})
-     gsap.to("#home3  #ArchieBoxheader,#home3 #textheader",2,{ y:"0vh",color:"grey",delay:"1.5"})
- 
   }
-}}
+}
+
+
+  // markers: {
+            //   startColor: "purple",
+            //   endColor: "fuchsia",
+            //   fontSize: "3rem",
+            // },

@@ -1,5 +1,5 @@
 
-<div class="grid grid-cols-3 items-center align-self-center w-[50vh]">
+<div (window:scroll)="onScroll()" class="grid grid-cols-3 items-center align-self-center w-[50vh]">
 <div id="r1" style="border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 2vh solid blue;
@@ -19,7 +19,7 @@
   width: 21vh;
   height: 21vh;
   transform: rotate(50deg)"></div>
-  <h1  id="text" class="text-gray-200 text-[2.5vh]">{{text}}</h1>
+  <h1  id="text" class="text-[transparent] text-[2.5vh]">{{text}}</h1>
 </div>
 
 
