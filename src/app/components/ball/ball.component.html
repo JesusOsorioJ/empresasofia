@@ -1,29 +1,27 @@
-<div (window:scroll)="onScroll()" class="">
-<img id="r1" src="../../../assets/ringAnimation/r1.png">
-<img id="r2" src="../../../assets/ringAnimation/r2.png">
-<!-- <img id="r3" src="../../../assets/ringAnimation/r3.png"> -->
-<h3  id="text">{{text}}</h3>
+
+<div class="grid grid-cols-3 items-center align-self-center w-[50vh]">
+<div id="r1" style="border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2vh solid blue;
+  border-right: 2vh solid green;
+  border-bottom: 2vh solid red;
+  border-left: 2vh solid pink;
+  width: 26vh;
+  height: 26vh;
+  transform: rotate(190deg)"></div>
+
+<div id="r2" style="border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2vh solid blue;
+  border-right: 2vh solid green;
+  border-bottom: 2vh solid red;
+  border-left: 2vh solid pink;
+  width: 21vh;
+  height: 21vh;
+  transform: rotate(50deg)"></div>
+  <h1  id="text" class="text-gray-200 text-[2.5vh]">{{text}}</h1>
 </div>
 
 
-<!-- <div *ngFor="let ra of rad;let i=index" class="flex" [id]="i" >
-  
-      <svg [attr.height]="ra" [attr.width]="ra" 
-        [attr.r]="ra/2" [attr.transform]="por[i][0]">
-        <circle [attr.cx]="ra/2" [attr.cy]="ra/2" 
-        [attr.r]="ra/2" fill="inherit ">
-        <polygon [attr.points]="por[i][0]" 
-        style="fill:red" />
-        </circle>
-      </svg>
-      
-</div> -->
-
-<!-- 
-<svg [attr.height]="radio[0][i]" [attr.width]="radio[1][i]" 
-      [attr.r]="radio[0][i]" [attr.transform]="por[i][0]">
-        <circle [attr.cx]="radio[0][i]" [attr.cy]="radio[i][3]" 
-        [attr.r]="radio[0][i]/2" fill="cyan"/>
-      </svg> -->
 
 

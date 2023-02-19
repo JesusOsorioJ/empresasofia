@@ -5,5 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './home4.component.html'
 })
 export class Home4Component {
-
+  public onScroll(){
+    
+  }
 }

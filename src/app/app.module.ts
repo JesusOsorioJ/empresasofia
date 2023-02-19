@@ -27,8 +27,7 @@ import { DiagonalComponent } from './components/diagonal/diagonal.component';
     Home4Component,
     AnimationBookComponent,
     BallComponent,
-    DiagonalComponent,
-    
+    DiagonalComponent    
   ],
   imports: [
     BrowserModule,
