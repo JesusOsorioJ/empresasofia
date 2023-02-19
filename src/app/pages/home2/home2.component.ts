@@ -50,7 +50,7 @@ export class Home2Component {
   public onScroll(){
     let ph = window.pageYOffset/window.innerHeight
 
-    console.log("ph", ph);
+    // console.log("ph", ph);
     
     // if( ph>0.9){
     //   gsap.to("#ArchieBox",{x:"10vh", y:"-55vh",scale:1})

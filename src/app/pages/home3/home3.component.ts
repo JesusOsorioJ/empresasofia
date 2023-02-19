@@ -18,7 +18,7 @@ export class Home3Component {
     }
 
     public onshow (){
-      console.log(window.pageYOffset)
+      // console.log(window.pageYOffset)
     }
 
     public onScroll(){
