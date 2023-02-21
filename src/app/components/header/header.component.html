@@ -1,15 +1,17 @@
 <div id="header" (window:scroll)="onScroll()" class="w-screen px-6 pt-6 lg:px-8 fixed z-10">
-  <nav  class="flex items-center justify-between" aria-label="Global">
+  <nav class="flex items-center justify-between" aria-label="Global">
     <div class="flex lg:flex-1">
       <a href="#home1" class="-m-1.5 p-1.5">
-        <app-animation-book  ></app-animation-book>
+        <app-animation-book></app-animation-book>
       </a>
     </div>
     <div class="flex lg:hidden">
-      <button (click)="closeopen()" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+      <button (click)="closeopen()" type="button"
+        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
         <span class="sr-only">Open main menu</span>
         <!-- Heroicon name: outline/bars-3 -->
-        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </button>
@@ -17,15 +19,15 @@
     <div id="textheader" class="hidden lg:flex lg:justify-end lg:gap-x-12 text-white">
       <a href="#home2" class="text-base font-semibold leading-6 hover:text-blue-500">1. Nosotros</a>
       <a href="#home3" class=" text-base font-semibold leading-6 hover:text-blue-500">2. Mision-Vision</a>
-      <a  href="#home4" class="text-base font-semibold leading-6 hover:text-blue-500">3. Servicios</a>                                                      
-      <a  href="#home5" class=" text-base font-semibold leading-6 hover:text-blue-500">4. Valores </a>
-      <a  href="#home6" class=" text-base font-semibold leading-6 hover:text-blue-500">5. Contactanos </a>
-    
+      <a href="#home4" class="text-base font-semibold leading-6 hover:text-blue-500">3. Servicios</a>
+      <a href="#home5" class=" text-base font-semibold leading-6 hover:text-blue-500">4. Valores </a>
+      <a href="#home6" class=" text-base font-semibold leading-6 hover:text-blue-500">5. Contactanos </a>
+
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
   <div role="dialog" aria-modal="true">
-    <div focus="true"  *ngIf="show" class="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
+    <div focus="true" *ngIf="show" class="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
       <div class="flex items-center justify-between">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
@@ -34,7 +36,8 @@
         <button (click)="closeopen()" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
           <span class="sr-only">Close menu</span>
           <!-- Heroicon name: outline/x-mark -->
-          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" aria-hidden="true">
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="black" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
@@ -42,13 +45,23 @@
       <div class="mt-6 flow-root">
         <div class="-my-6 divide-y divide-gray-500/10">
           <div class="space-y-2 py-6">
-            <a href="#home2" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">1. Nosotros</a>
-            <a href="#home3" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">2. Mision-Vision</a>
-            <a href="#home4" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">3. Servicios</a>
-            <a href="#home5" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10">4. Valores</a>
+            <a href="#home2"
+              class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">1.
+              Nosotros</a>
+            <a href="#home3"
+              class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">2.
+              Mision-Vision</a>
+            <a href="#home4"
+              class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">3.
+              Servicios</a>
+            <a href="#home5"
+              class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10">4.
+              Valores</a>
             <div class="py-5 border-t border-gray-200">
-              <a href="#home6" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10">5. Contactanos</a>
-            </div> 
+              <a href="#home6"
+                class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10">5.
+                Contactanos</a>
+            </div>
           </div>
         </div>
       </div>
