@@ -13,6 +13,8 @@ import { Home4Component } from './pages/home4/home4.component';
 import { AnimationBookComponent } from './components/animation-book/animation-book.component';
 import { BallComponent } from './components/ball/ball.component';
 import { DiagonalComponent } from './components/diagonal/diagonal.component';
+import { Home5Component } from './pages/home5/home5.component';
+import { Home6Component } from './pages/home6/home6.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { DiagonalComponent } from './components/diagonal/diagonal.component';
     Home4Component,
     AnimationBookComponent,
     BallComponent,
-    DiagonalComponent    
+    DiagonalComponent,
+    Home5Component,
+    Home6Component    
   ],
   imports: [
     BrowserModule,

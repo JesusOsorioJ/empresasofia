@@ -9,26 +9,28 @@ export class BallComponent {
 
   ph: number = 0;
   enter: boolean = true;
-  @Input() text: string = "";
+  @Input() text: string = ""
+ 
 
   ngOnInit() {
-    gsap.to(["#r1", "#r2", "#r3", "#text"], 0
+    gsap.to(["#r1", "#r2", "#textball"], 0
       , { display: "inLine", position: "relative" })
-    gsap.to("#r1", 0, { left: "15vh" })
-    gsap.to("#r2", 0, { left: "1vh" })
-    gsap.to("#text", 0, { left: "-13vh" })
+    gsap.to("#r1", 0, { top: "8rem" })
+    gsap.to("#r2", 0, { top: "1rem"})
+    gsap.to("#textball", 0, { top:"-7rem"})
+
+    gsap.to("#r1", {
+      onStart: () => this.ballMove(),
+      scrollTrigger: {
+        trigger: "#r1", start: "center 80%", end: "center 0%",
+        toggleActions: "play reverse play reverse",
+      },
+    });
   }
 
-  public onScroll() {
-    this.ph = window.pageYOffset / window.innerHeight
-
-    if (this.ph>1.7&&this.enter==true) {
-      this.enter=false
-      gsap.to("#r1", 5, { rotation: 360 })
-      gsap.to("#r2", 5, { rotation: -360 })
-      gsap.to("#text", 5, { color:"#a8b2d1" })
-    }
-    
-
+  public ballMove() {
+      gsap.to("#r1", 5, { rotation: 270 })
+      gsap.to("#r2", 5, { rotation: -267 })
+      gsap.to("#textball", 5, { color:"#495670" })
   }
 }
