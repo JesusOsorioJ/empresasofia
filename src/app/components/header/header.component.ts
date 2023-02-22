@@ -16,20 +16,19 @@ export class HeaderComponent {
   ngOnInit() {
     // Animation open and close header 
     setInterval(() => {
+      //header quiet but not at the top
       if (window.pageYOffset / window.innerHeight < 0.1) {
-        gsap.to(["#ArchieBoxheader", "#textheader", "#coverBook",
-          "#libroBook1", "#libroBook2", "#libroBook3", "#baseBook"],
+        gsap.to(["#ArchieBoxheader", "#textheader"],
           { color: "white", duration: 2, stroke: "white" })
         gsap.to("#header", {
           border: "1px solid transparent ",
-          duration: 2
+          duration: 2,
         })
       } else if (window.pageYOffset / window.innerHeight != this.p) {
-        gsap.to(["#ArchieBoxheader", "#textheader", "#coverBook",
-          "#libroBook1", "#libroBook2", "#libroBook3", "#baseBook"],
+        gsap.to(["#ArchieBoxheader", "#textheader"],
           { color: "gray", stroke: "gray", duration: 2 })
         gsap.to("#header", {
-          background: "white", borderBottom: "1px solid #e2e8f0 ",
+          background: "#991e1e", borderBottom: "1px solid #e2e8f0 ",
           duration: 2
         })
       }
@@ -38,9 +37,9 @@ export class HeaderComponent {
   }
 
   onScroll() {
+    //Header in move
     if (window.pageYOffset / window.innerHeight > 0.1) {
-      gsap.to(["#ArchieBoxheader", "#textheader", "#coverBook",
-        "#libroBook1", "#libroBook2", "#libroBook3", "#baseBook"], {
+      gsap.to(["#ArchieBoxheader", "#textheader"], {
           color: "transparent",
         duration: 2, stroke: "transparent"
       })

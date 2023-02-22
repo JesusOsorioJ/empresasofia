@@ -3,10 +3,10 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 @Component({
-  selector: 'app-home4',
-  templateUrl: './home4.component.html'
+  selector: 'app-e-servicios',
+  templateUrl: './e-servicios.component.html'
 })
-export class Home4Component {
+export class EServiciosComponent {
   ngOnInit() {
     gsap.registerPlugin(ScrollTrigger);
     // open parrafo home3

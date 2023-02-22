@@ -2,13 +2,11 @@ import { Component } from '@angular/core';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
 @Component({
-  selector: 'app-home3',
-  templateUrl: './home3.component.html'
+  selector: 'app-d-mision',
+  templateUrl: './d-mision.component.html'
 })
-export class Home3Component {
-
+export class DMisionComponent {
   ngOnInit() {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -33,5 +31,3 @@ export class Home3Component {
 
   }
 }
-
-

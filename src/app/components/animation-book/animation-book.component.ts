@@ -23,8 +23,23 @@ export class AnimationBookComponent {
     gsap.to(["#libroBook1"], 2, { y: "8.5vh", ease: "bounce", delay: "0" })
     gsap.to(["#libroBook2"], 1.5, { y: "5.75vh", ease: "bounce", delay: "1.0" })
     gsap.to(["#libroBook3"], 1, { y: "3vh", ease: "bounce", delay: "2.0" })
-    gsap.to(["#coverBook"], 2, { y: "0vh", ease: "bounce", delay: "2.5" })
+    gsap.to(["#coverBook"], 2, { y: "-1vh", ease: "bounce", delay: "2.5" })
 
   }
+ public mouseEnter(){
+
+  gsap.to(["#coverBook"], 2, { y: "-7vh" })
+    gsap.to(["#libroBook3"], 1, {  y: "-2vh", delay:0.5  })
+    gsap.to(["#libroBook2"], 1, {  y: "0.75vh" ,delay:1.0 })
+    gsap.to(["#libroBook1"], 1, {  y: "3.5vh" ,delay:1.5})
+  }
+    
+ public mouseLeave(){
+  gsap.to(["#libroBook1"], 2, { y: "8.5vh", ease: "bounce", delay: "0" })
+  gsap.to(["#libroBook2"], 1.5, { y: "5.75vh", ease: "bounce", delay: "1.0" })
+  gsap.to(["#libroBook3"], 1, { y: "3vh", ease: "bounce", delay: "2.0" })
+  gsap.to(["#coverBook"], 2, { y: "-1vh", ease: "bounce", delay: "2.5" })
+ } 
+
 }
 

@@ -1,0 +1,27 @@
+<ngb-carousel style="height: 60vh;overflow: hidden;background-size: cover;"  >
+    <ng-template *ngFor="let foto of data1" ngbSlide  >
+        <div class="picsum-img-wrapper">
+            <img src="../../../assets/fondo/{{foto}}" style="background-size: cover;width: 100vw;" />
+        </div>
+        <div class="carousel-caption">
+          <p class="bg-white rounded-md w-auto text-black font-bold">fdg</p> -->
+          <div class="flex flex-col items-center">
+            <div class="mt-16 lg:mt-24 ">
+              <div class="m-9 text-center lg:w-[50vw]">
+                <h1 class=" text-2xl  font-bold tracking-tight text-white ">¿Cómo cumplir con las normas archivísticas de
+                  la manera mas eficiente?</h1>
+                <p class="mt-6 text-base lg:text-lg leading-8 text-white">Archibigedoc nace de la necesidad de una gestión
+                  eficiente de
+                  la información generada
+                  por los organismos públicos y privados</p>
+                <div class="mt-5 flex items-center justify-center gap-x-6">
+                  <a href="#home2"
+                    class="animate-bounce rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    &darr; Click &darr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+    </ng-template>
+  </ngb-carousel>

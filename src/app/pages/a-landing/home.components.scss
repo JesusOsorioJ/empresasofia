@@ -1,0 +1,82 @@
+a {
+    text-decoration-line: none;
+
+}
+
+ngb-carousel img {
+    width: 100%;
+    outline: none;
+}
+
+ngb-carousel {
+    width: inherit;
+    height: inherit;
+}
+
+.carousel-inner {
+    overflow: visible;
+}
+
+.carousel-item {
+    display: flex !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.2s ease-in-out, visibility 1.2s;
+    z-index: -1;
+}
+
+.carousel-item.active{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.carousel-control-prev {
+     z-index: 20;
+}
+
+.carousel-control-next {
+     z-index: 20;
+}
+
+.carousel-indicators{
+    z-index: 20;
+    color:#991e1e;
+    color:#de6363;
+    color:#b57676;
+    color:#991e1e;
+
+}
+
+
+
+// color palet
+// #color{    background-color: #0a192f;
+//     background-color: rgb(94, 142, 213);
+//     color:#0a192f
+//     #8892b0
+//     #000430
+//     #64ffda
+//     #8892b0
+//     #ccd6f6
+//     #f42c2c
+//     #D3D3D3
+//     #778899
+//     grey
+//     black
+//     #e2e8f0
+//     #ccd6f6
+//     #a8b2d1
+//     #495670
+//     #233554
+//     #0a192f
+//     #ffffff00
+//     #e5e7eb
+//       #d1d5db
+
+// markers: {
+                //   startColor: "purple",
+                //   endColor: "fuchsia",
+                //   fontSize: "3rem",
+                // },
+                // #991e1e
