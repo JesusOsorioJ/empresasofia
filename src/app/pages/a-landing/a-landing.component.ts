@@ -10,7 +10,7 @@ export class ALandingComponent {
   
   foto=["book.jpg","fondo2.jpg","office.png"]
   
-  height=window.innerHeight
+  height=window.innerHeight*0.7
   width=window.innerWidth
   cellWidth=window.innerWidth
   margin=20
@@ -18,10 +18,9 @@ export class ALandingComponent {
   autoplayInterval=2000
   pauseOnHover=true
   dots=true
-  loop=true
+  loop=false
   ngOnInit() {
-    // gsap.to("#optionlanding", 0, { y: "10vh" })
-    // gsap.to("#optionlanding", 2, { y: "0vh", delay: 1 })
+    
 
   }
 }

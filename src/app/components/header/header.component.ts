@@ -21,7 +21,7 @@ export class HeaderComponent {
         gsap.to(["#ArchieBoxheader", "#textheader"],
           { color: "white", duration: 2, stroke: "white" })
         gsap.to("#header", {
-          border: "1px solid transparent ",
+          border: "1px solid transparent ",background: "#991e1e",
           duration: 2,
         })
       } else if (window.pageYOffset / window.innerHeight != this.p) {

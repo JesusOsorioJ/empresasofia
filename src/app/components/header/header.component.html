@@ -1,4 +1,4 @@
-<div id="header" (window:scroll)="onScroll()" class="w-screen px-6 pt-6 lg:px-8 fixed z-10">
+<div id="header" (window:scroll)="onScroll()" class="w-screen px-6 lg:px-8 fixed z-10 h-[12vh]">
   <nav class="flex items-center justify-between" aria-label="Global">
     <div class="flex lg:flex-1">
       <a href="#home1" class="-m-1.5 p-1.5">
@@ -25,11 +25,11 @@
       </button>
     </div>
     <div id="textheader" class="hidden lg:flex lg:justify-end lg:gap-x-12 text-white">
-      <a href="#home2" class="text-base font-semibold leading-6 hover:text-blue-500">1. Nosotros</a>
-      <a href="#home3" class=" text-base font-semibold leading-6 hover:text-blue-500">2. Mision-Vision</a>
-      <a href="#home4" class="text-base font-semibold leading-6 hover:text-blue-500">3. Servicios</a>
-      <a href="#home5" class=" text-base font-semibold leading-6 hover:text-blue-500">4. Valores </a>
-      <a href="#home6" class=" text-base font-semibold leading-6 hover:text-blue-500">5. Contactanos </a>
+      <a href="#somos" class="text-base font-semibold leading-6 hover:text-blue-500">1. Nosotros</a>
+      <a href="#mision" class=" text-base font-semibold leading-6 hover:text-blue-500">2. Mision-Vision</a>
+      <a href="#servicios" class="text-base font-semibold leading-6 hover:text-blue-500">3. Servicios</a>
+      <a href="#opiniones" class=" text-base font-semibold leading-6 hover:text-blue-500">4. Clientes </a>
+      <a href="#envios" class=" text-base font-semibold leading-6 hover:text-blue-500">5. Contactanos </a>
 
     </div>
   </nav>
@@ -39,7 +39,7 @@
       <div class="flex items-center justify-between">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
-          <img class="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+          <img class="h-8" src="https://www.pngplay.com/wp-content/uploads/2/Red-Star-PNG-Free-File-Download.png" alt="">
         </a>
         <button (click)="closeopen()" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
           <span class="sr-only">Close menu</span>
@@ -53,20 +53,20 @@
       <div class="mt-6 flow-root">
         <div class="-my-6 divide-y divide-gray-500/10">
           <div class="space-y-2 py-6">
-            <a href="#home2"
+            <a href="#somos" (click)="closeopen()"
               class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">1.
               Nosotros</a>
-            <a href="#home3"
+            <a href="#mision" (click)="closeopen()"
               class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">2.
               Mision-Vision</a>
-            <a href="#home4"
+            <a href="#servicios" (click)="closeopen()"
               class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">3.
               Servicios</a>
-            <a href="#home5"
+            <a href="#opiniones" (click)="closeopen()"
               class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10">4.
-              Valores</a>
+              Clientes</a>
             <div class="py-5 border-t border-gray-200">
-              <a href="#home6"
+              <a href="#envios" (click)="closeopen()"
                 class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10">5.
                 Contactanos</a>
             </div>

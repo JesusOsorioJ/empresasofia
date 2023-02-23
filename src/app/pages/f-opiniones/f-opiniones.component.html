@@ -1,12 +1,13 @@
-<div class="py-16 bg-gray-50">
+<div id="opiniones" class="py-16 bg-gray-50">
   <div class="mx-auto max-w-7xl lg:px-8">
-    <div class="mx-auto max-w-2xl sm:text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-[#991e1e] sm:text-4xl">Simple no-tricks pricing</h2>
+    <div class="mx-6 lg:mx-auto  max-w-2xl sm:text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-[#991e1e] sm:text-4xl">Nuestros clientes</h2>
       <p class="mt-6 text-lg leading-8 text-gray-600">Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et
         quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</p>
     </div>
     <carousel class="p-10" [height]="height" [cellWidth]="cellWidth" [margin]="margin" [autoplay]="autoplay"
-      [autoplayInterval]="autoplayInterval" [pauseOnHover]="pauseOnHover" [dots]="dots" [loop]="loop">
+      [autoplayInterval]="autoplayInterval" [pauseOnHover]="pauseOnHover" [dots]="dots" [loop]="loop"
+      style="z-index: 0">
       <div *ngFor="let step of data, index as i" class="carousel-cell">
         <div
           class=" mx-auto  max-w-2xl bg-gray-200 rounded-3xl ring-1 ring-gray-200 sm:mt-0 lg:mx-0 lg:flex lg:max-w-none"

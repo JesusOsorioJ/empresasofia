@@ -20,12 +20,27 @@ export class AnimationBookComponent {
     gsap.to(["#libroBook1", "#libroBook2", "#libroBook3",
       "#libroBook4"], 0, { x: "4vh", y: "-2vh" })
 
+
+    gsap.to("#coverBook", {
+      onStart: () => this.bookMove(),
+      scrollTrigger: {
+        trigger: "#coverBook", start: "top 95%", end: "top 0%",
+        toggleActions: "play reverse play reverse",
+      },
+    });
+
+  }
+  public bookMove(){
     gsap.to(["#libroBook1"], 2, { y: "8.5vh", ease: "bounce", delay: "0" })
     gsap.to(["#libroBook2"], 1.5, { y: "5.75vh", ease: "bounce", delay: "1.0" })
     gsap.to(["#libroBook3"], 1, { y: "3vh", ease: "bounce", delay: "2.0" })
     gsap.to(["#coverBook"], 2, { y: "-1vh", ease: "bounce", delay: "2.5" })
-
   }
+
+
+  
+
+
  public mouseEnter(){
 
   gsap.to(["#coverBook"], 2, { y: "-7vh" })
