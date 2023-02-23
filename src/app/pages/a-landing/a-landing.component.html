@@ -1,11 +1,11 @@
-<ngb-carousel style="height: 60vh;overflow: hidden;background-size: cover;"  >
+<!-- <ngb-carousel style="height: 60vh;overflow: hidden;background-size: cover;"  >
     <ng-template *ngFor="let foto of data1" ngbSlide  >
         <div class="picsum-img-wrapper">
             <img src="../../../assets/fondo/{{foto}}" style="background-size: cover;width: 100vw;" />
         </div>
         <div class="carousel-caption">
           <p class="bg-white rounded-md w-auto text-black font-bold">fdg</p> -->
-          <div class="flex flex-col items-center">
+          <!-- <div class="flex flex-col items-center">
             <div class="mt-16 lg:mt-24 ">
               <div class="m-9 text-center lg:w-[50vw]">
                 <h1 class=" text-2xl  font-bold tracking-tight text-white ">¿Cómo cumplir con las normas archivísticas de
@@ -23,5 +23,21 @@
             </div>
           </div>
          </div>
-    </ng-template>
-  </ngb-carousel>
+    </ng-template> -->
+  <!-- </ngb-carousel> -->
+
+  <div class="pt-16 bg-gray-50">
+    <div class="grid grid-cols-1 w-screen h-screen">
+      <carousel [height]="height" [cellWidth]="cellWidth" [margin]="margin" [autoplay]="autoplay"
+        [autoplayInterval]="autoplayInterval" [pauseOnHover]="pauseOnHover" [dots]="dots" [loop]="loop">
+        <div *ngFor="let step of foto" class="carousel-cell">
+          <!-- <div
+            class=" mx-auto  max-w-2xl bg-gray-200 rounded-3xl ring-1 ring-gray-200  lg:flex lg:max-w-none"
+            style="height:100vh;width:100vw">
+            <img src="../../../assets/fondo/{{step}}" style="background-size: cover;width: 100vw;" />
+          </div> -->
+          <div class="bg-cover bg-center ..." style="background-image: url(../../../assets/fondo/{{step}})"></div>
+        </div>
+      </carousel>
+    </div>
+  </div>

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { gsap } from 'gsap'
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap'; 
 
 
 @Component({
@@ -9,15 +8,20 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ALandingComponent {
   
-  data1=["book.jpg","fondo2.jpg","office.png"]
-
+  foto=["book.jpg","fondo2.jpg","office.png"]
   
-  constructor(private _config:NgbCarouselConfig){
-
-  }
+  height=window.innerHeight
+  width=window.innerWidth
+  cellWidth=window.innerWidth
+  margin=20
+  autoplay=true
+  autoplayInterval=2000
+  pauseOnHover=true
+  dots=true
+  loop=true
   ngOnInit() {
-    gsap.to("#optionlanding", 0, { y: "10vh" })
-    gsap.to("#optionlanding", 2, { y: "0vh", delay: 1 })
+    // gsap.to("#optionlanding", 0, { y: "10vh" })
+    // gsap.to("#optionlanding", 2, { y: "0vh", delay: 1 })
 
   }
 }

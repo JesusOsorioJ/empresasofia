@@ -30,8 +30,8 @@ export class BallComponent {
   }
 
   public ballMove() {
-    gsap.to("#r1", 5, { rotation: 270 })
-    gsap.to("#r2", 5, { rotation: -267 })
+    gsap.to("#r1", 5, { rotation: 87 })
+    gsap.to("#r2", 5, { rotation: -70 })
     gsap.to("#textball", 5, { color: "#495670" })
   }
 }

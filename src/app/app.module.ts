@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -39,7 +39,7 @@ import { GEnviosComponent } from './pages/g-envios/g-envios.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
+    IvyCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
