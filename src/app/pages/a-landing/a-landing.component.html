@@ -1,33 +1,19 @@
- <div id="landing" class="pt-[13vh] bg-gray-100" >
-    <div class="grid grid-cols-1 justify-items-end w-screen">
-      <div class=" absolute " style="z-index: 5" >
-        <div class="flex flex-col items-center">
-          <div class="mx-4 lg:mx-16 mt-[12vh] w-[90vw] sm:w-[60vw] lg:w-[30vw] bg-gray-50 rounded-xl">
-            <div class="m-[6vh] text-center ">
-              <h1 class=" text-[3vh] font-bold tracking-tight text-black " 
-              style="color:#af3939">¿Cómo cumplir con las normas archivísticas de
-                la manera mas eficiente?</h1>
-              <p class="mt-[3vh] text-base text-[2vh] text-black"
-              style="color:rgb(52, 49, 49)">Archibigedoc nace de la necesidad de una gestión
-                eficiente de
-                la información generada
-                por los organismos públicos y privados</p>
-              <div class="mt-5 flex items-center justify-center gap-x-6">
-                <a href="#somos"
-                  class="animate-bounce rounded-md bg-pink-700 px-[1vw] py-[0.5] text-[3vh] text-white font-semibold leading-7 text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  style="background: #af3939;">
-                  &darr; Click &darr;</a>
-              </div>
-            </div>
-          </div>
+<div id="landing" class="2xl:mx-auto 2xl:container mx-4 py-8">
+    <div class="w-full relative flex items-center justify-center">
+        <img src="https://i.ibb.co/4sYZ8gC/img-2.png" alt="dining" class="w-full h-full absolute z-0 hidden xl:block" />
+        <img src="https://i.ibb.co/bbS3J9C/pexels-max-vakhtbovych-6301182-1.png" alt="dining" class="w-full h-full absolute z-0 hidden sm:block xl:hidden" />
+        <img src="https://i.ibb.co/JKkzGDs/pexels-max-vakhtbovych-6301182-1.png" alt="dining" class="w-full h-full absolute z-0 sm:hidden" />
+        <div class="bg-[#af3939] bg-opacity-80 md:my-16 lg:py-16 py-10 w-full md:mx-24 md:px-12 px-4 flex flex-col items-center justify-center relative z-40">
+            <h1 class="text-4xl font-semibold leading-9 text-white text-center">¿Cómo cumplir con las normas archivísticas de
+              la manera mas eficiente?</h1>
+            <p class="text-base leading-normal text-center text-white mt-6">
+              ProyectoGestión nace de la necesidad de una gestión
+              eficiente de
+              la información generada
+              por los organismos públicos y privados
+            </p>
+            
+                <button class="m-6 focus:outline-none focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-white py-4 px-6 hover:bg-opacity-75">Ver</button>
         </div>
-       </div>
-      <carousel [height]="height" [cellWidth]="cellWidth" [margin]="margin" [autoplay]="autoplay"
-        [autoplayInterval]="autoplayInterval" [pauseOnHover]="pauseOnHover" [dots]="dots" [loop]="loop" style="z-index: 0">
-        <div *ngFor="let step of foto" class="carousel-cell">
-          <div class="bg-cover bg-center  w-[100vw] h-[70vh]" style="background-image: url(../../../assets/fondo/{{step}})">
-          </div>
-        </div>
-      </carousel>
     </div>
-  </div>
+</div>

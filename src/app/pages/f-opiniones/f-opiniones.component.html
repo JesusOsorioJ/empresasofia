@@ -2,35 +2,22 @@
   <div class="mx-auto max-w-7xl lg:px-8">
     <div class="mx-6 lg:mx-auto  max-w-2xl sm:text-center">
       <h2 class="text-3xl font-bold tracking-tight text-[#991e1e] sm:text-4xl">Nuestros clientes</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et
-        quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Nuestro propósito en Servicios PGDI es estar Más cerca de nuestros clientes, para construir una relación efectiva, cálida y flexible.</p>
     </div>
     <carousel class="p-10" [height]="height" [cellWidth]="cellWidth" [margin]="margin" [autoplay]="autoplay"
       [autoplayInterval]="autoplayInterval" [pauseOnHover]="pauseOnHover" [dots]="dots" [loop]="loop"
       style="z-index: 0">
       <div *ngFor="let step of data, index as i" class="carousel-cell">
-        <div
-          class=" mx-auto  max-w-2xl bg-gray-200 rounded-3xl ring-1 ring-gray-200 sm:mt-0 lg:mx-0 lg:flex lg:max-w-none"
-          style="height:400;width:400">
-          <div class="p-4 sm:p-10 lg:flex-auto">
-            <h3 class="text-2xl font-bold tracking-tight text-gray-900">{{step.name}}</h3>
-            <p class="mt-6 text-base leading-7 text-gray-600">{{step.opinion}}</p>
-            <div class="mt-10 flex items-center gap-x-4">
-              <h4 class="flex-none text-sm font-semibold leading-6 text-[#991e1e]">Trabajos realizados</h4>
-              <div class="h-px flex-auto bg-gray-100"></div>
-            </div>
-            <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 ">
-              <li *ngFor="let work of step.trabajos" class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="#991e1e" aria-hidden="true">
-                  <path fill-rule="evenodd"
-                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                    clip-rule="evenodd" />
-                </svg>
-                {{work}}
-              </li>
-            </ul>
+        <div class="relative">
+          
+          <div  style="background-image:url(../../../assets/opinion/{{step.no}}.jpg)" class="bg-cover bg-center v-60 h-60" alt="table-chair" > </div>
+          <div class="absolute bottom-4 sm:bottom-10 inset-x-4 sm:inset-x-10 p-6 bg-white flex flex-col justify-start items-start">
+              <div>
+                  <p class="text-2xl font-semibold leading-6 text-gray-800">{{step.name}}</p>
+              </div>
           </div>
-        </div>
+      </div>
+        
       </div>
     </carousel>
   </div>

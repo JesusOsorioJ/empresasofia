@@ -7,7 +7,17 @@ import { gsap } from 'gsap'
   templateUrl: './header.component.html'
 })
 export class HeaderComponent {
+
+
+  isList: number;
+    isMenu: boolean = false;
+    isSearch: boolean = false;
+
+    constructor() {}
+    
+
   show: boolean = false
+  
   p = 0
   public closeopen() {
     this.show = !this.show
@@ -15,6 +25,8 @@ export class HeaderComponent {
   }
   ngOnInit() {
     // Animation open and close header 
+    gsap.to("#namemain",{y:"-9vh", duration:0})
+    gsap.to("#namemain",{y:"0vh", duration:2, stagger:0.2, ease:"bounce"})
     setInterval(() => {
       //header quiet but not at the top
       if (window.pageYOffset / window.innerHeight < 0.1) {
@@ -26,7 +38,7 @@ export class HeaderComponent {
         })
       } else if (window.pageYOffset / window.innerHeight != this.p) {
         gsap.to(["#ArchieBoxheader", "#textheader"],
-          { color: "gray", stroke: "gray", duration: 2 })
+          { color: "white", duration: 2 })
         gsap.to("#header", {
           background: "#991e1e", borderBottom: "1px solid #e2e8f0 ",
           duration: 2
