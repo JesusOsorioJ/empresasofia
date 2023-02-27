@@ -1,4 +1,4 @@
-<nav class="bg-gray-800 shadow xl:block hidden">
+<nav class="bg-[#af3939] shadow xl:block fixed hidden z-40 w-full">
   <div class="mx-auto container px-6 py-2 xl:py-0">
       <div class="flex items-center justify-between">
           <div class="inset-y-0 left-0 flex items-center xl:hidden">
@@ -83,22 +83,24 @@
               </div>
           </div>
           <div class="flex w-full sm:w-auto items-center sm:items-stretch justify-end sm:justify-start">
-              <div class="flex items-center">
-                  <svg aria-label="Home" id="logo" enable-background="new 0 0 300 300" height="44"
-                      viewBox="0 0 300 300" width="43" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g>
-                          <path fill="#4c51bf"
-                              d="m234.735 35.532c-8.822 0-16 7.178-16 16s7.178 16 16 16 16-7.178 16-16-7.178-16-16-16zm0 24c-4.412 0-8-3.588-8-8s3.588-8 8-8 8 3.588 8 8-3.588 8-8 8zm-62.529-14c0-2.502 2.028-4.53 4.53-4.53s4.53 2.028 4.53 4.53c0 2.501-2.028 4.529-4.53 4.529s-4.53-2.027-4.53-4.529zm89.059 60c0 2.501-2.028 4.529-4.53 4.529s-4.53-2.028-4.53-4.529c0-2.502 2.028-4.53 4.53-4.53s4.53 2.029 4.53 4.53zm-40.522-5.459-88-51.064c-1.242-.723-2.773-.723-4.016 0l-88 51.064c-1.232.715-1.992 2.033-1.992 3.459v104c0 1.404.736 2.705 1.938 3.428l88 52.936c.635.381 1.35.572 2.062.572s1.428-.191 2.062-.572l88-52.936c1.201-.723 1.938-2.023 1.938-3.428v-104c0-1.426-.76-2.744-1.992-3.459zm-90.008-42.98 80.085 46.47-52.95 31.289-23.135-13.607v-21.713c0-2.209-1.791-4-4-4s-4 1.791-4 4v21.713l-26.027 15.309c-1.223.719-1.973 2.029-1.973 3.447v29.795l-52 30.727v-94.688zm0 198.707-80.189-48.237 51.467-30.412 24.723 14.539v19.842c0 2.209 1.791 4 4 4s4-1.791 4-4v-19.842l26.027-15.307c1.223-.719 1.973-2.029 1.973-3.447v-31.667l52-30.728v94.729z" />
-                      </g>
-                  </svg>
-                  <h2 class="hidden sm:block text-base text-gray-700 font-bold leading-normal pl-3">The North</h2>
-              </div>
+              <a class="flex items-center" href="#landing">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="white">
+                    <path d="M 8 3 C 7.448 3 7 3.448 7 4 L 7 30 C 7 30.553 7.448 31 8 31 L 13 31 C 13.553 31 14 30.553 14 30 L 14 4 C 14 3.448 13.553 3 13 3 L 8 3 z M 17 3 C 16.448 3 16 3.448 16 4 L 16 30 C 16 30.553 16.448 31 17 31 L 22 31 C 22.553 31 23 30.553 23 30 L 23 4 C 23 3.448 22.553 3 22 3 L 17 3 z M 9.5 7 L 11.5 7 C 12.053 7 12.5 7.448 12.5 8 C 12.5 8.552 12.053 9 11.5 9 L 9.5 9 C 8.947 9 8.5 8.552 8.5 8 C 8.5 7.448 8.947 7 9.5 7 z M 18.5 7 L 20.5 7 C 21.053 7 21.5 7.448 21.5 8 C 21.5 8.552 21.053 9 20.5 9 L 18.5 9 C 17.947 9 17.5 8.552 17.5 8 C 17.5 7.448 17.947 7 18.5 7 z M 37.59375 8.4375 L 32.75 9.59375 C 32.492 9.65475 32.265 9.80625 32.125 10.03125 C 32.067012 10.124445 32.024409 10.238633 32 10.34375 L 32 10 C 32 9.448 31.553 9 31 9 L 26 9 C 25.448 9 25 9.448 25 10 L 25 30 C 25 30.553 25.448 31 26 31 L 31 31 C 31.553 31 32 30.553 32 30 L 32 10.78125 L 36.8125 30.25 C 36.9215 30.711 37.32825 31.03125 37.78125 31.03125 C 37.85725 31.03125 37.923 31.017 38 31 L 42.875 29.84375 C 43.133 29.78175 43.36 29.63125 43.5 29.40625 C 43.64 29.18125 43.686 28.91425 43.625 28.65625 L 38.8125 9.1875 C 38.6845 8.6495 38.12775 8.3075 37.59375 8.4375 z M 36.96875 12.78125 C 37.352844 12.846031 37.686 13.127 37.78125 13.53125 C 37.90725 14.06925 37.56825 14.624 37.03125 14.75 L 36.0625 14.96875 C 35.9855 14.98775 35.91975 15 35.84375 15 C 35.39075 15 34.95275 14.67975 34.84375 14.21875 C 34.71775 13.68075 35.05675 13.15725 35.59375 13.03125 L 36.5625 12.8125 C 36.69675 12.78025 36.840719 12.759656 36.96875 12.78125 z M 28 13 L 29 13 C 29.553 13 30 13.448 30 14 C 30 14.552 29.553 15 29 15 L 28 15 C 27.447 15 27 14.552 27 14 C 27 13.448 27.447 13 28 13 z M 39.53125 24.46875 C 40.06625 24.34575 40.623 24.67975 40.75 25.21875 C 40.876 25.75575 40.538 26.28025 40 26.40625 L 39.03125 26.65625 C 38.95425 26.67425 38.85725 26.6875 38.78125 26.6875 C 38.32825 26.6875 37.9215 26.36625 37.8125 25.90625 C 37.6865 25.36925 38.0245 24.8135 38.5625 24.6875 L 39.53125 24.46875 z M 9.5 25 L 11.5 25 C 12.053 25 12.5 25.448 12.5 26 C 12.5 26.552 12.053 27 11.5 27 L 9.5 27 C 8.947 27 8.5 26.552 8.5 26 C 8.5 25.448 8.947 25 9.5 25 z M 18.5 25 L 20.5 25 C 21.053 25 21.5 25.448 21.5 26 C 21.5 26.552 21.053 27 20.5 27 L 18.5 27 C 17.947 27 17.5 26.552 17.5 26 C 17.5 25.448 17.947 25 18.5 25 z M 28 25 L 29 25 C 29.553 25 30 25.447 30 26 C 30 26.553 29.553 27 29 27 L 28 27 C 27.447 27 27 26.553 27 26 C 27 25.447 27.447 25 28 25 z M 3 32 C 2.448 32 2 32.447 2 33 L 2 36 C 2 36.553 2.448 37 3 37 L 47 37 C 47.553 37 48 36.553 48 36 L 48 33 C 48 32.447 47.553 32 47 32 L 3 32 z M 6 39 L 6 44.5 C 6 45.879 7.122 47 8.5 47 C 9.878 47 11 45.879 11 44.5 L 11 39 L 6 39 z M 39 39 L 39 44.5 C 39 45.879 40.121 47 41.5 47 C 42.879 47 44 45.879 44 44.5 L 44 39 L 39 39 z"/>
+                </svg>
+                
+                <div id="ArchieBoxheader" width="20vh" class="flex px-2 items-center text-white group-hover:text-gray-500">
+                    <div class="p-0">
+                      <h1 class="font-bold text-[1rem] " style="font-family:Copperplate ">ProyectoGestión</h1>
+                      <h1 class=" text-[0.6rem]" style="font-family:Lucida Console ">Documental Integral</h1>
+                    </div>
+                    <h1 class="p-2 font-bold text-[1rem]" style="font-family:Copperplate">PGDI</h1>
+                  </div>
+                </a>
           </div>
           <div class="flex">
               <div class="hidden xl:flex md:mr-6 xl:mr-16">
                   <a href="#somos"
-                      class="flex px-5 items-center py-6 text-sm leading-5 text-white hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                      class="flex px-5 items-center py-6 text-sm leading-5 text-white hover:bg-gray-100 hover:text-[#af3939] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                       <span class="mr-2">
                           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid" width="20"
                               height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -113,7 +115,7 @@
                       Nosotros
                   </a>
                   <a href="#mision"
-                      class="flex px-5 items-center py-6 text-sm leading-5 text-white hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                      class="flex px-5 items-center py-6 text-sm leading-5 text-white hover:bg-gray-100 hover:text-[#af3939] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                       <span class="mr-2">
                           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-puzzle"
                               width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -127,7 +129,7 @@
                       Mision-Vision
                   </a>
                   <a href="#servicios"
-                      class="flex px-5 items-center py-6 text-sm leading-5 text-white hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                      class="flex px-5 items-center py-6 text-sm leading-5 text-white hover:bg-gray-100 hover:text-[#af3939] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                       <span class="mr-2">
                           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-compass"
                               width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -140,7 +142,7 @@
                       Servicios
                   </a>
                   <a href="#opiniones"
-                      class="flex px-5 items-center py-6 text-sm leading-5 text-white hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                      class="flex px-5 items-center py-6 text-sm leading-5 text-white hover:bg-gray-100 hover:text-[#af3939] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                       <span class="mr-2">
                           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="20"
                               height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -154,7 +156,7 @@
                       Clientes
                   </a>
                   <a href="#envios"
-                      class="flex px-5 items-center py-6 text-sm leading-5 text-white hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                      class="flex px-5 items-center py-6 text-sm leading-5 text-white hover:bg-gray-100 hover:text-[#af3939] focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                       <span class="mr-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid" width="20"
                         height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -174,19 +176,17 @@
   </div>
 </nav>
 <nav>
-  <div class="py-4 px-6 w-full flex xl:hidden justify-between items-center bg-white fixed top-0 z-40">
+  <div class="py-4 px-6 w-full flex xl:hidden justify-between items-center bg-[#af3939] fixed top-0 z-40">
       <div class="w-24">
-          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="44" viewBox="0 0 43 44" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M37.8735 0C36.1688 0 34.7818 1.37956 34.7818 3.0751C34.7818 4.77063 36.1688 6.15019 37.8735 6.15019C39.5782 6.15019 40.9653 4.77063 40.9653 3.0751C40.9653 1.37956 39.5782 0 37.8735 0ZM37.8735 4.61264C37.021 4.61264 36.3277 3.92305 36.3277 3.0751C36.3277 2.22714 37.021 1.53755 37.8735 1.53755C38.7261 1.53755 39.4194 2.22714 39.4194 3.0751C39.4194 3.92305 38.7261 4.61264 37.8735 4.61264ZM26.6663 1.0513C26.1828 1.0513 25.7909 1.44107 25.7909 1.92193C25.7909 2.4028 26.1828 2.79238 26.6663 2.79238C27.1497 2.79238 27.5416 2.40261 27.5416 1.92193C27.5416 1.44107 27.1497 1.0513 26.6663 1.0513ZM43 13.4535C43 13.9342 42.6081 14.324 42.1247 14.324C41.6412 14.324 41.2493 13.9342 41.2493 13.4535C41.2493 12.9727 41.6412 12.5829 42.1247 12.5829C42.6081 12.5829 43 12.9729 43 13.4535ZM18.1654 2.59019L35.1698 12.4044C35.4079 12.5418 35.5548 12.7951 35.5548 13.0692V33.0573C35.5548 33.3273 35.4123 33.5772 35.1803 33.7161L18.1758 43.8901C18.0533 43.9633 17.915 44 17.7774 44C17.6398 44 17.5016 43.9633 17.3789 43.8901L0.374484 33.7161C0.142219 33.5772 0 33.3271 0 33.0573V13.0692C0 12.7951 0.146857 12.5418 0.384919 12.4044L17.3894 2.59019C17.6296 2.45124 17.9254 2.45124 18.1654 2.59019ZM17.7774 4.14388L33.2524 13.0751L23.0207 19.0887L18.5503 16.4735V12.3004C18.5503 11.8758 18.2042 11.5316 17.7774 11.5316C17.3505 11.5316 17.0044 11.8758 17.0044 12.3004V16.4735L11.9752 19.4158C11.7389 19.554 11.5939 19.8057 11.5939 20.0783V25.8047L1.54586 31.7102V13.5118L17.7774 4.14388ZM2.28227 33.0632L17.7774 42.3341L34.0091 32.6225V14.4162L23.961 20.322V26.4081C23.961 26.6807 23.8161 26.9325 23.5798 27.0706L18.5505 30.0125V33.826C18.5505 34.2506 18.2044 34.5948 17.7776 34.5948C17.3507 34.5948 17.0046 34.2506 17.0046 33.826V30.0125L12.2274 27.2182L2.28227 33.0632Z"
-                  fill="#667EEA" />
-          </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="white">
+            <path d="M 8 3 C 7.448 3 7 3.448 7 4 L 7 30 C 7 30.553 7.448 31 8 31 L 13 31 C 13.553 31 14 30.553 14 30 L 14 4 C 14 3.448 13.553 3 13 3 L 8 3 z M 17 3 C 16.448 3 16 3.448 16 4 L 16 30 C 16 30.553 16.448 31 17 31 L 22 31 C 22.553 31 23 30.553 23 30 L 23 4 C 23 3.448 22.553 3 22 3 L 17 3 z M 9.5 7 L 11.5 7 C 12.053 7 12.5 7.448 12.5 8 C 12.5 8.552 12.053 9 11.5 9 L 9.5 9 C 8.947 9 8.5 8.552 8.5 8 C 8.5 7.448 8.947 7 9.5 7 z M 18.5 7 L 20.5 7 C 21.053 7 21.5 7.448 21.5 8 C 21.5 8.552 21.053 9 20.5 9 L 18.5 9 C 17.947 9 17.5 8.552 17.5 8 C 17.5 7.448 17.947 7 18.5 7 z M 37.59375 8.4375 L 32.75 9.59375 C 32.492 9.65475 32.265 9.80625 32.125 10.03125 C 32.067012 10.124445 32.024409 10.238633 32 10.34375 L 32 10 C 32 9.448 31.553 9 31 9 L 26 9 C 25.448 9 25 9.448 25 10 L 25 30 C 25 30.553 25.448 31 26 31 L 31 31 C 31.553 31 32 30.553 32 30 L 32 10.78125 L 36.8125 30.25 C 36.9215 30.711 37.32825 31.03125 37.78125 31.03125 C 37.85725 31.03125 37.923 31.017 38 31 L 42.875 29.84375 C 43.133 29.78175 43.36 29.63125 43.5 29.40625 C 43.64 29.18125 43.686 28.91425 43.625 28.65625 L 38.8125 9.1875 C 38.6845 8.6495 38.12775 8.3075 37.59375 8.4375 z M 36.96875 12.78125 C 37.352844 12.846031 37.686 13.127 37.78125 13.53125 C 37.90725 14.06925 37.56825 14.624 37.03125 14.75 L 36.0625 14.96875 C 35.9855 14.98775 35.91975 15 35.84375 15 C 35.39075 15 34.95275 14.67975 34.84375 14.21875 C 34.71775 13.68075 35.05675 13.15725 35.59375 13.03125 L 36.5625 12.8125 C 36.69675 12.78025 36.840719 12.759656 36.96875 12.78125 z M 28 13 L 29 13 C 29.553 13 30 13.448 30 14 C 30 14.552 29.553 15 29 15 L 28 15 C 27.447 15 27 14.552 27 14 C 27 13.448 27.447 13 28 13 z M 39.53125 24.46875 C 40.06625 24.34575 40.623 24.67975 40.75 25.21875 C 40.876 25.75575 40.538 26.28025 40 26.40625 L 39.03125 26.65625 C 38.95425 26.67425 38.85725 26.6875 38.78125 26.6875 C 38.32825 26.6875 37.9215 26.36625 37.8125 25.90625 C 37.6865 25.36925 38.0245 24.8135 38.5625 24.6875 L 39.53125 24.46875 z M 9.5 25 L 11.5 25 C 12.053 25 12.5 25.448 12.5 26 C 12.5 26.552 12.053 27 11.5 27 L 9.5 27 C 8.947 27 8.5 26.552 8.5 26 C 8.5 25.448 8.947 25 9.5 25 z M 18.5 25 L 20.5 25 C 21.053 25 21.5 25.448 21.5 26 C 21.5 26.552 21.053 27 20.5 27 L 18.5 27 C 17.947 27 17.5 26.552 17.5 26 C 17.5 25.448 17.947 25 18.5 25 z M 28 25 L 29 25 C 29.553 25 30 25.447 30 26 C 30 26.553 29.553 27 29 27 L 28 27 C 27.447 27 27 26.553 27 26 C 27 25.447 27.447 25 28 25 z M 3 32 C 2.448 32 2 32.447 2 33 L 2 36 C 2 36.553 2.448 37 3 37 L 47 37 C 47.553 37 48 36.553 48 36 L 48 33 C 48 32.447 47.553 32 47 32 L 3 32 z M 6 39 L 6 44.5 C 6 45.879 7.122 47 8.5 47 C 9.878 47 11 45.879 11 44.5 L 11 39 L 6 39 z M 39 39 L 39 44.5 C 39 45.879 40.121 47 41.5 47 C 42.879 47 44 45.879 44 44.5 L 44 39 L 39 39 z"/>
+        </svg>
       </div>
       <div class="flex items-center">
           
           <div id="menu" class="text-gray-800" (click)="isMenu=true">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24"
-                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none"
                   stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <line x1="4" y1="6" x2="20" y2="6" />
@@ -200,25 +200,19 @@
   <div *ngIf="isMenu" class="absolute w-full h-full  z-40 xl:hidden" id="mobile-nav">
       <div class="bg-gray-800 opacity-50 w-full h-full" (click)="isMenu=false"></div>
       <div
-          class="w-64 z-40 fixed overflow-y-auto z-40 top-0 bg-white shadow h-full flex-col justify-between xl:hidden pb-4 transition duration-150 ease-in-out">
+          class="w-64 z-40 fixed overflow-y-auto z-40 top-0 bg-[#af3939] shadow h-full flex-col justify-between xl:hidden pb-4 transition duration-150 ease-in-out">
           <div class="px-6 h-full">
               <div class="flex flex-col justify-between h-full w-full">
                   <div>
                       <div class="mt-6 flex w-full items-center justify-between">
                           <div class="flex items-center justify-between w-full">
-                              <div class="flex items-center">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="44" viewBox="0 0 43 44"
-                                      fill="none">
-                                      <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M37.8735 0C36.1688 0 34.7818 1.37956 34.7818 3.0751C34.7818 4.77063 36.1688 6.15019 37.8735 6.15019C39.5782 6.15019 40.9653 4.77063 40.9653 3.0751C40.9653 1.37956 39.5782 0 37.8735 0ZM37.8735 4.61264C37.021 4.61264 36.3277 3.92305 36.3277 3.0751C36.3277 2.22714 37.021 1.53755 37.8735 1.53755C38.7261 1.53755 39.4194 2.22714 39.4194 3.0751C39.4194 3.92305 38.7261 4.61264 37.8735 4.61264ZM26.6663 1.0513C26.1828 1.0513 25.7909 1.44107 25.7909 1.92193C25.7909 2.4028 26.1828 2.79238 26.6663 2.79238C27.1497 2.79238 27.5416 2.40261 27.5416 1.92193C27.5416 1.44107 27.1497 1.0513 26.6663 1.0513ZM43 13.4535C43 13.9342 42.6081 14.324 42.1247 14.324C41.6412 14.324 41.2493 13.9342 41.2493 13.4535C41.2493 12.9727 41.6412 12.5829 42.1247 12.5829C42.6081 12.5829 43 12.9729 43 13.4535ZM18.1654 2.59019L35.1698 12.4044C35.4079 12.5418 35.5548 12.7951 35.5548 13.0692V33.0573C35.5548 33.3273 35.4123 33.5772 35.1803 33.7161L18.1758 43.8901C18.0533 43.9633 17.915 44 17.7774 44C17.6398 44 17.5016 43.9633 17.3789 43.8901L0.374484 33.7161C0.142219 33.5772 0 33.3271 0 33.0573V13.0692C0 12.7951 0.146857 12.5418 0.384919 12.4044L17.3894 2.59019C17.6296 2.45124 17.9254 2.45124 18.1654 2.59019ZM17.7774 4.14388L33.2524 13.0751L23.0207 19.0887L18.5503 16.4735V12.3004C18.5503 11.8758 18.2042 11.5316 17.7774 11.5316C17.3505 11.5316 17.0044 11.8758 17.0044 12.3004V16.4735L11.9752 19.4158C11.7389 19.554 11.5939 19.8057 11.5939 20.0783V25.8047L1.54586 31.7102V13.5118L17.7774 4.14388ZM2.28227 33.0632L17.7774 42.3341L34.0091 32.6225V14.4162L23.961 20.322V26.4081C23.961 26.6807 23.8161 26.9325 23.5798 27.0706L18.5505 30.0125V33.826C18.5505 34.2506 18.2044 34.5948 17.7776 34.5948C17.3507 34.5948 17.0046 34.2506 17.0046 33.826V30.0125L12.2274 27.2182L2.28227 33.0632Z"
-                                          fill="#667EEA"></path>
-                                  </svg>
-                                  <p class="text-base md:text-2xl text-gray-800 ml-3">The North</p>
-                              </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" fill="white">
+                                <path d="M 8 3 C 7.448 3 7 3.448 7 4 L 7 30 C 7 30.553 7.448 31 8 31 L 13 31 C 13.553 31 14 30.553 14 30 L 14 4 C 14 3.448 13.553 3 13 3 L 8 3 z M 17 3 C 16.448 3 16 3.448 16 4 L 16 30 C 16 30.553 16.448 31 17 31 L 22 31 C 22.553 31 23 30.553 23 30 L 23 4 C 23 3.448 22.553 3 22 3 L 17 3 z M 9.5 7 L 11.5 7 C 12.053 7 12.5 7.448 12.5 8 C 12.5 8.552 12.053 9 11.5 9 L 9.5 9 C 8.947 9 8.5 8.552 8.5 8 C 8.5 7.448 8.947 7 9.5 7 z M 18.5 7 L 20.5 7 C 21.053 7 21.5 7.448 21.5 8 C 21.5 8.552 21.053 9 20.5 9 L 18.5 9 C 17.947 9 17.5 8.552 17.5 8 C 17.5 7.448 17.947 7 18.5 7 z M 37.59375 8.4375 L 32.75 9.59375 C 32.492 9.65475 32.265 9.80625 32.125 10.03125 C 32.067012 10.124445 32.024409 10.238633 32 10.34375 L 32 10 C 32 9.448 31.553 9 31 9 L 26 9 C 25.448 9 25 9.448 25 10 L 25 30 C 25 30.553 25.448 31 26 31 L 31 31 C 31.553 31 32 30.553 32 30 L 32 10.78125 L 36.8125 30.25 C 36.9215 30.711 37.32825 31.03125 37.78125 31.03125 C 37.85725 31.03125 37.923 31.017 38 31 L 42.875 29.84375 C 43.133 29.78175 43.36 29.63125 43.5 29.40625 C 43.64 29.18125 43.686 28.91425 43.625 28.65625 L 38.8125 9.1875 C 38.6845 8.6495 38.12775 8.3075 37.59375 8.4375 z M 36.96875 12.78125 C 37.352844 12.846031 37.686 13.127 37.78125 13.53125 C 37.90725 14.06925 37.56825 14.624 37.03125 14.75 L 36.0625 14.96875 C 35.9855 14.98775 35.91975 15 35.84375 15 C 35.39075 15 34.95275 14.67975 34.84375 14.21875 C 34.71775 13.68075 35.05675 13.15725 35.59375 13.03125 L 36.5625 12.8125 C 36.69675 12.78025 36.840719 12.759656 36.96875 12.78125 z M 28 13 L 29 13 C 29.553 13 30 13.448 30 14 C 30 14.552 29.553 15 29 15 L 28 15 C 27.447 15 27 14.552 27 14 C 27 13.448 27.447 13 28 13 z M 39.53125 24.46875 C 40.06625 24.34575 40.623 24.67975 40.75 25.21875 C 40.876 25.75575 40.538 26.28025 40 26.40625 L 39.03125 26.65625 C 38.95425 26.67425 38.85725 26.6875 38.78125 26.6875 C 38.32825 26.6875 37.9215 26.36625 37.8125 25.90625 C 37.6865 25.36925 38.0245 24.8135 38.5625 24.6875 L 39.53125 24.46875 z M 9.5 25 L 11.5 25 C 12.053 25 12.5 25.448 12.5 26 C 12.5 26.552 12.053 27 11.5 27 L 9.5 27 C 8.947 27 8.5 26.552 8.5 26 C 8.5 25.448 8.947 25 9.5 25 z M 18.5 25 L 20.5 25 C 21.053 25 21.5 25.448 21.5 26 C 21.5 26.552 21.053 27 20.5 27 L 18.5 27 C 17.947 27 17.5 26.552 17.5 26 C 17.5 25.448 17.947 25 18.5 25 z M 28 25 L 29 25 C 29.553 25 30 25.447 30 26 C 30 26.553 29.553 27 29 27 L 28 27 C 27.447 27 27 26.553 27 26 C 27 25.447 27.447 25 28 25 z M 3 32 C 2.448 32 2 32.447 2 33 L 2 36 C 2 36.553 2.448 37 3 37 L 47 37 C 47.553 37 48 36.553 48 36 L 48 33 C 48 32.447 47.553 32 47 32 L 3 32 z M 6 39 L 6 44.5 C 6 45.879 7.122 47 8.5 47 C 9.878 47 11 45.879 11 44.5 L 11 39 L 6 39 z M 39 39 L 39 44.5 C 39 45.879 40.121 47 41.5 47 C 42.879 47 44 45.879 44 44.5 L 44 39 L 39 39 z"/>
+                            </svg>
                               <div id="cross" class="text-gray-800" (click)="isMenu=false">
                                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x"
                                       width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
-                                      stroke="currentColor" fill="none" stroke-linecap="round"
+                                      stroke="currentColor" fill="white" stroke-linecap="round"
                                       stroke-linejoin="round">
                                       <path stroke="none" d="M0 0h24v24H0z"></path>
                                       <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -229,29 +223,10 @@
                       </div>
                       <ul class="f-m-m">
                           <a class="cursor-pointer" href="#somos">
-                              <li class="text-gray-800 pt-10">
-                                  <div class="flex items-center">
-                                      <div class="w-6 h-6 md:w-8 md:h-8 text-indigo-700">
-                                          <svg xmlns="http://www.w3.org/2000/svg"
-                                              class="icon icon-tabler icon-tabler-grid" viewBox="0 0 24 24"
-                                              stroke-width="1.5" stroke="currentColor" fill="none"
-                                              stroke-linecap="round" stroke-linejoin="round">
-                                              <path stroke="none" d="M0 0h24v24H0z"></path>
-                                              <rect x="4" y="4" width="6" height="6" rx="1"></rect>
-                                              <rect x="14" y="4" width="6" height="6" rx="1"></rect>
-                                              <rect x="4" y="14" width="6" height="6" rx="1"></rect>
-                                              <rect x="14" y="14" width="6" height="6" rx="1"></rect>
-                                          </svg>
-                                      </div>
-                                      <p class="text-indigo-700 xl:text-base text-base ml-3">Nosotros</p>
-                                  </div>
-                              </li>
-                          </a>
-                          <a class="cursor-pointer" href="#somos">
-                            <li class="text-gray-800 pt-8">
+                            <li class="text-white pt-8">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
-                                        <div class="w-6 h-6 md:w-8 md:h-8 text-gray-800">
+                                        <div class="w-6 h-6 md:w-8 md:h-8 ">
                                           <svg xmlns="http://www.w3.org/2000/svg"
                                           class="icon icon-tabler icon-tabler-grid" viewBox="0 0 24 24"
                                           stroke-width="1.5" stroke="currentColor" fill="none"
@@ -263,17 +238,17 @@
                                           <rect x="14" y="14" width="6" height="6" rx="1"></rect>
                                       </svg>
                                         </div>
-                                        <p class="text-gray-800 xl:text-base md:text-2xl text-base ml-3">Nosotros
+                                        <p class=" xl:text-base md:text-2xl text-base ml-3">Nosotros
                                         </p>
                                     </div>
                                 </div>
                             </li>
                         </a>
                           <a class="cursor-pointer" href="#mision">
-                              <li class="text-gray-800 pt-8">
+                              <li class="text-white pt-8">
                                   <div class="flex items-center justify-between">
                                       <div class="flex items-center">
-                                          <div class="w-6 h-6 md:w-8 md:h-8 text-gray-800">
+                                          <div class="w-6 h-6 md:w-8 md:h-8 ">
                                               <svg xmlns="http://www.w3.org/2000/svg"
                                                   class="icon icon-tabler icon-tabler-puzzle" viewBox="0 0 24 24"
                                                   stroke-width="1.5" stroke="currentColor" fill="none"
@@ -284,16 +259,16 @@
                                                   </path>
                                               </svg>
                                           </div>
-                                          <p class="text-gray-800 xl:text-base md:text-2xl text-base ml-3">Mision-Vision
+                                          <p class=" xl:text-base md:text-2xl text-base ml-3">Mision-Vision
                                           </p>
                                       </div>
                                   </div>
                               </li>
                           </a>
                           <a class="cursor-pointer" href="#servicios">
-                              <li class="text-gray-800 pt-8">
+                              <li class="text-white pt-8">
                                   <div class="flex items-center">
-                                      <div class="w-6 h-6 md:w-8 md:h-8 text-gray-800">
+                                      <div class="w-6 h-6 md:w-8 md:h-8 ">
                                           <svg xmlns="http://www.w3.org/2000/svg"
                                               class="icon icon-tabler icon-tabler-compass" viewBox="0 0 24 24"
                                               stroke-width="1.5" stroke="currentColor" fill="none"
@@ -303,14 +278,14 @@
                                               <circle cx="12" cy="12" r="9"></circle>
                                           </svg>
                                       </div>
-                                      <p class="text-gray-800 xl:text-base md:text-2xl text-base ml-3">Servicios</p>
+                                      <p class=" xl:text-base md:text-2xl text-base ml-3">Servicios</p>
                                   </div>
                               </li>
                           </a>
                           <a class="cursor-pointer" href="#opiniones">
-                            <li class="text-gray-800 pt-8">
+                            <li class="text-white pt-8">
                                 <div class="flex items-center">
-                                    <div class="w-6 h-6 md:w-8 md:h-8 text-gray-800">
+                                    <div class="w-6 h-6 md:w-8 md:h-8 ">
                                       <svg xmlns="http://www.w3.org/2000/svg"
                                       class="icon icon-tabler icon-tabler-code" viewBox="0 0 24 24"
                                       stroke-width="1.5" stroke="currentColor" fill="none"
@@ -321,14 +296,14 @@
                                       <line x1="14" y1="4" x2="10" y2="20"></line>
                                   </svg>
                                     </div>
-                                    <p class="text-gray-800 xl:text-base md:text-2xl text-base ml-3">Clientes</p>
+                                    <p class=" xl:text-base md:text-2xl text-base ml-3">Clientes</p>
                                 </div>
                             </li>
                         </a>
                         <a class="cursor-pointer" href="#envios">
-                          <li class="text-gray-800 pt-8">
+                          <li class="text-white pt-8">
                               <div class="flex items-center">
-                                  <div class="w-6 h-6 md:w-8 md:h-8 text-gray-800">
+                                  <div class="w-6 h-6 md:w-8 md:h-8 ">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler icon-tabler-grid" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" fill="none"
@@ -340,7 +315,7 @@
                                     <rect x="14" y="14" width="6" height="6" rx="1"></rect>
                                 </svg>
                                   </div>
-                                  <p class="text-gray-800 xl:text-base md:text-2xl text-base ml-3">Contactanos</p>
+                                  <p class=" xl:text-base md:text-2xl text-base ml-3">Contactanos</p>
                               </div>
                           </li>
                       </a>

@@ -8,7 +8,7 @@ import { gsap } from 'gsap'
 })
 export class HeaderComponent {
 
-
+ 
   isList: number;
     isMenu: boolean = false;
     isSearch: boolean = false;

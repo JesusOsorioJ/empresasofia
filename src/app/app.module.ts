@@ -17,6 +17,7 @@ import { DMisionComponent } from './pages/d-mision/d-mision.component';
 import { EServiciosComponent } from './pages/e-servicios/e-servicios.component';
 import { FOpinionesComponent } from './pages/f-opiniones/f-opiniones.component';
 import { GEnviosComponent } from './pages/g-envios/g-envios.component';
+import { IconComponent } from './components/icon/icon.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { GEnviosComponent } from './pages/g-envios/g-envios.component';
     DMisionComponent,
     EServiciosComponent,
     FOpinionesComponent,
-    GEnviosComponent    
+    GEnviosComponent,
+    IconComponent    
   ],
   imports: [
     BrowserModule,

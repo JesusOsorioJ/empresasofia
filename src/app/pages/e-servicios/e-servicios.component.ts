@@ -11,7 +11,7 @@ export class EServiciosComponent {
     gsap.registerPlugin(ScrollTrigger);
     // open parrafo home3
     gsap.to("#home4item", {
-      color: "gray", x: "2vh", duration: 2, stagger: 0.5,
+      color: "gray", x: "1rem", duration: 2, stagger: 0.5,
       scrollTrigger: {
         trigger: "#home4item", start: "center 80%", end: "center 0%",
         toggleActions: "play none none none"
@@ -19,7 +19,7 @@ export class EServiciosComponent {
     });
     // open parrafo home3
     gsap.to("#imghome4", {
-      filter: " opacity(100%)", y: "-2vh", duration: 2, stagger: 0.5,
+      filter: " opacity(100%)", y: "1rem", duration: 2, stagger: 0.5,
       scrollTrigger: {
         trigger: "#imghome4", start: "center 80%", end: "center 0%",
         toggleActions: "play none none none",

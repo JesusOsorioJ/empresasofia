@@ -20,7 +20,6 @@ export class AnimationBookComponent {
     gsap.to(["#libroBook1", "#libroBook2", "#libroBook3",
       "#libroBook4"], 0, { x: "1.6rem", y: "-0.8rem" })
 
-
     gsap.to("#coverBook", {
       onStart: () => this.bookMove(),
       scrollTrigger: {

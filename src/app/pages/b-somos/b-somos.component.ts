@@ -13,7 +13,7 @@ export class BSomosComponent {
 
     // open home2text home2
     gsap.to("#home2text", {
-      color: "gray", x: "2vh", duration: 2, stagger: 0.6,
+      color: "gray", x: "1rem", duration: 2, stagger: 0.6,
       scrollTrigger: {
         trigger: "#home2text", start: "center 90%", end: "center 0%",
         toggleActions: "play none none none"
@@ -22,15 +22,13 @@ export class BSomosComponent {
 
     // open home2text home2
     gsap.to("#optionlanding", {
-       y: "-5vh", duration: 1, stagger: 0.6,
+       y: "-3rem", duration: 1, stagger: 0.6,
       scrollTrigger: {
         trigger: "#optionlanding", start: "center 90%", end: "center 0%",
         toggleActions: "play none none none",
       },
     });
 
-    // gsap.to("#optionlanding", 0, { y: "10vh" })
-    // gsap.to("#optionlanding", 2, { y: "0vh", delay: 1 })
   }
 }
 // markers: {
