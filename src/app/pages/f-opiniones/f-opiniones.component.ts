@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { databases } from './database'
-import { gsap } from 'gsap';
+// import Swiper core and required modules
+import SwiperCore, { Navigation, Pagination, A11y, Autoplay } from 'swiper/core';
+
+// install Swiper modules
+SwiperCore.use([Navigation, Pagination, A11y, Autoplay]);
 
 @Component({
   selector: 'app-f-opiniones',
@@ -8,24 +12,13 @@ import { gsap } from 'gsap';
 })
 export class FOpinionesComponent {
   data = databases
-  ancho=window.innerWidth
-  height=400
-  cellWidth=300
-  margin=20
-  autoplay=false
-  autoplayInterval=2000
-  pauseOnHover=true
-  dots=true
-  loop=true
-  
-  ngOnInit(){
-    gsap.to("#opiniones", {
-      onStart: () => {this.autoplay=true},
-      scrollTrigger: {
-        trigger: "#opiniones", start: "top 90%", end: "top 0%",
-        toggleActions: "play none none none",
-      },
-
-  })
-}
+  slidesPerView = 1
+  ngOnInit() {
+    if (window.innerWidth > 650) {
+      this.slidesPerView = 2
+    }
+    if (window.innerWidth > 900) {
+      this.slidesPerView = 3
+    }
+  }
 }

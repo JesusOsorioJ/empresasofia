@@ -1,6 +1,5 @@
-<div id="landing" class="2xl:mx-auto 2xl:container mx-4 py-8">
-    <div class="w-full relative flex items-center justify-center">
-        <img src="https://booksandbao.com/wp-content/uploads/2021/07/best-bookshelves-1000x665.jpg.webp" alt="dining" class="w-full h-full absolute z-0 hidden xl:block" />
+
+    <div class="w-full absolute  flex items-center justify-center 2xl:mx-auto 2xl:container mx-4 py-8">
         <div class="bg-[#af3939] bg-opacity-80 my-16 py-16 py-10 w-full md:mx-24 md:px-12 px-4 flex flex-col items-center justify-center relative z-20">
             <h1 class="text-4xl font-semibold leading-9 text-white text-center">¿Cómo cumplir con las normas archivísticas de
               la manera mas eficiente?</h1>
@@ -10,8 +9,17 @@
               la información generada
               por los organismos públicos y privados
             </p>
-            
-                <a href="#somos" class="m-6 w-[4.5rem] focus:outline-none focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-white py-4 px-6 hover:bg-opacity-75">VER</a>
+            <a href="#somos" class="m-6 w-[4.5rem] focus:outline-none focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-white py-4 px-6 hover:bg-opacity-75">VER</a>
         </div>
     </div>
-</div>
+
+
+
+<swiper [slidesPerView]="1" [speed]="3000"  [navigation]="true" [pagination]="{ clickable: true }"
+      [loop]="true" [autoplay]="{delay: 2000}">
+      <ng-template *ngFor="let step of foto" swiperSlide>
+          <div style="background-image:url(../../../assets/fondo/{{step}})"
+            class="bg-cover bg-center w-full h-[70vh]" alt="table-chair"> </div>
+      </ng-template>
+
+</swiper>

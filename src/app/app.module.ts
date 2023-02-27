@@ -40,7 +40,8 @@ import { IconComponent } from './components/icon/icon.component';
   ],
   imports: [
     BrowserModule,
-    SwiperModule,
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

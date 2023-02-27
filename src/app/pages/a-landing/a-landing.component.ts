@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { gsap } from 'gsap'
+// import Swiper core and required modules
+import SwiperCore, { Navigation, Pagination, A11y, Autoplay } from 'swiper/core';
+
+// install Swiper modules
+SwiperCore.use([Navigation, Pagination, A11y, Autoplay]);
 
 
 @Component({
@@ -10,15 +14,7 @@ export class ALandingComponent {
   
   foto=["book.jpg","fondo2.jpg","office.png"]
   
-  height=window.innerHeight*0.7
-  width=window.innerWidth
-  cellWidth=window.innerWidth
-  margin=20
-  autoplay=true
-  autoplayInterval=2000
-  pauseOnHover=true
-  dots=true
-  loop=false
+
   ngOnInit() {
     
 

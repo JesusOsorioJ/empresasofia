@@ -1,43 +1,27 @@
-<!-- <div id="opiniones" class="py-16 bg-gray-50">
+<div id="opiniones" class="py-16 lg:py-24 bg-gray-50 px-6">
   <div class="mx-auto max-w-7xl lg:px-8">
-    <div class="mx-6 lg:mx-auto  max-w-2xl sm:text-center">
+    <div class="mx-6 my-6 lg:mx-auto  max-w-2xl sm:text-center">
       <h2 class="text-3xl font-bold tracking-tight text-[#991e1e] sm:text-4xl">Nuestros clientes</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Nuestro propósito en Servicios PGDI es estar Más cerca de nuestros clientes, para construir una relación efectiva, cálida y flexible.</p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Nuestro propósito en Servicios PGDI es estar Más cerca de nuestros
+        clientes, para construir una relación efectiva, cálida y flexible.</p>
     </div>
-    <carousel class="p-10" [height]="height" [cellWidth]="cellWidth" [margin]="margin" [autoplay]="autoplay"
-      [autoplayInterval]="autoplayInterval" [pauseOnHover]="pauseOnHover" [dots]="dots" [loop]="loop"
-      style="z-index: 0">
-      <div *ngFor="let step of data, index as i" class="carousel-cell">
+    <swiper [slidesPerView]="slidesPerView" [spaceBetween]="50" [navigation]="true" [pagination]="{ clickable: true }"
+      [loop]="true" [autoplay]="{delay: 2000}">
+      <ng-template *ngFor="let step of data" swiperSlide>
         <div class="relative">
-          
-          <div  style="background-image:url(../../../assets/opinion/{{step.no}}.jpg)" class="bg-cover bg-center v-60 h-60" alt="table-chair" > </div>
-          <div class="absolute bottom-4 sm:bottom-10 inset-x-4 sm:inset-x-10 p-6 bg-white flex flex-col justify-start items-start">
-              <div>
-                  <p class="text-2xl font-semibold leading-6 text-gray-800">{{step.name}}</p>
-              </div>
-          </div>
-      </div>
-        
-      </div>
-    </carousel>
-  </div>
-</div> -->
 
-<!-- <swiper
-  [slidesPerView]="1"
-  [spaceBetween]="50"
-  [navigation]="true"
-  [pagination]="{ type: 'fraction' }"
-  [centeredSlides]="true"
-  [keyboard]="{
-    enabled: true
-  }"
-  [virtual]="true"
-  class="my-swiper"
->
-  <ng-template swiperSlide >
-    <div class="swiper-slide-container">
-     fgf
-    </div>
-  </ng-template>
-</swiper> -->
+          <div style="background-image:url(../../../assets/opinion/{{step.no}}.jpg)"
+            class="bg-cover bg-center v-60 h-60" alt="table-chair"> </div>
+          <div
+            class="absolute bottom-4 sm:bottom-10 inset-x-4 sm:inset-x-10 p-6 bg-white flex flex-col justify-start items-start">
+            <div>
+              <p class="text-2xl font-semibold leading-6 text-gray-800">{{step.name}}</p>
+            </div>
+          </div>
+        </div>
+
+      </ng-template>
+
+    </swiper>
+  </div>
+</div>
