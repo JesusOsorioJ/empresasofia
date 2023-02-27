@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { SwiperModule } from 'swiper/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -40,8 +40,7 @@ import { IconComponent } from './components/icon/icon.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    IvyCarouselModule,
+    SwiperModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
