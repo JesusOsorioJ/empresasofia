@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 // import Swiper core and required modules
-import SwiperCore, { Navigation, Pagination, A11y, Autoplay } from 'swiper/core';
+import SwiperCore, { Navigation, Pagination, A11y, Autoplay,EffectFade } from 'swiper/core';
 
 // install Swiper modules
-SwiperCore.use([Navigation, Pagination, A11y, Autoplay]);
+SwiperCore.use([Navigation, Pagination, A11y, Autoplay,EffectFade]);
 
 
 @Component({
@@ -12,7 +12,7 @@ SwiperCore.use([Navigation, Pagination, A11y, Autoplay]);
 })
 export class ALandingComponent {
   
-  foto=["book.jpg","fondo2.jpg","office.png"]
+  foto=["book.jpg","book.png","mision.jpg"]
   
 
   ngOnInit() {
@@ -20,3 +20,7 @@ export class ALandingComponent {
 
   }
 }
+// EffectFade - Fade Effect module
+// EffectCube - Cube Effect module
+// EffectFlip - Flip Effect module
+// EffectCoverflow
